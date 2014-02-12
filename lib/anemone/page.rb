@@ -74,7 +74,7 @@ module Anemone
     #
     def doc
       return @doc if @doc
-      @doc = Nokogiri::HTML(@body) if @body && html? rescue nil
+      @doc = Nokogiri::HTML(@body, nil, encoding='gbk') if @body && html? rescue nil
     end
 
     #

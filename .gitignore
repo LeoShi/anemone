@@ -1,4 +1,5 @@
 *.swp
+.idea
 Gemfile.lock
 test.db
 test.tch
